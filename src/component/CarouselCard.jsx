@@ -3,13 +3,10 @@ import { BsWallet } from "react-icons/bs";
 import { AiOutlineCar } from "react-icons/ai";
 import { MdOutlineSingleBed } from "react-icons/md";
 import { TbBath } from "react-icons/tb";
-import { motion } from 'framer-motion'
 
 const CarouselCard = (props) => {
   return (
-    <motion.div
-      initial={{ y: 200, scale: 0 }}
-      whileInView={{ y: 0, scale: 1 }}
+    <div
       class="col"
     >
       <div class="card bg-primary bg-opacity-10">
@@ -44,7 +41,7 @@ const CarouselCard = (props) => {
           </button>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 
