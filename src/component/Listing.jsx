@@ -2,7 +2,6 @@ import React from "react";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import CarouselCard from "./CarouselCard";
-import { motion } from "framer-motion";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -10,11 +9,7 @@ import "swiper/css/effect-fade";
 
 const Listing = () => {
   return (
-    <motion.div
-      initial={{ opacity: 0, x: 100 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      viewport={{ once: true, amount: 0.2 }}
-      transition={{ delay: 0.4, duration: 0.4 }}
+    <div
       className="container-fluid py-5"
     >
       <h2 className=" display-6 fw-normal text-center mb-3">Feature Listing</h2>
@@ -253,7 +248,7 @@ const Listing = () => {
           </div>
         </Carousel.Item>
       </Carousel> */}
-    </motion.div>
+    </div>
   );
 };
 
