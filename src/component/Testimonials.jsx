@@ -10,7 +10,8 @@ import "swiper/css/effect-fade";
 
 const Testimonials = () => {
   return (
-    <div>
+    <div
+      className="container-fluid py-5">
       <h2 className=" display-6 fw-normal text-center mb-3">
         Clients Testimonials
       </h2>
