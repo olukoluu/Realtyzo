@@ -4,10 +4,17 @@ import { AiOutlineCar } from "react-icons/ai";
 import { MdOutlineSingleBed } from "react-icons/md";
 import { TbBath } from "react-icons/tb";
 
+import { motion } from 'framer-motion
+
 const CarouselCard = (props) => {
   return (
-    <div
-      class="col"
+    <motion.div
+      
+      initial={{ opacity: 0, x: 100 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: false, amount: 0.3 }}
+      transition={{ delay: 0.4, duration: 0.4 }}
+      className="col"
     >
       <div class="card bg-primary bg-opacity-10">
         <img
@@ -41,7 +48,7 @@ const CarouselCard = (props) => {
           </button>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
