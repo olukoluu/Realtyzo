@@ -4,7 +4,7 @@ import { AiOutlineCar } from "react-icons/ai";
 import { MdOutlineSingleBed } from "react-icons/md";
 import { TbBath } from "react-icons/tb";
 
-import { motion } from 'framer-motion
+import { motion } from 'framer-motion'
 
 const CarouselCard = (props) => {
   return (
