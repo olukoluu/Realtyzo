@@ -10,13 +10,7 @@ import "swiper/css/effect-fade";
 
 const Testimonials = () => {
   return (
-    <motion.div
-      initial={{ opacity: 0, scale: 0 }}
-      whileInView={{ opacity: 1, scale: 1 }}
-      viewport={{ once: false, amount: 0.3 }}
-      transition={{ delay: 0.2, duration: 0.2 }}
-      className="container-fluid py-5"
-    >
+    <div>
       <h2 className=" display-6 fw-normal text-center mb-3">
         Clients Testimonials
       </h2>
@@ -164,7 +158,7 @@ const Testimonials = () => {
           </div>
         </SwiperSlide>
       </Swiper>
-    </motion.div>
+    </div>
   );
 };
 
